@@ -11,7 +11,7 @@
 3. `pytest --html=report.html --self-contained-html test_work_page.py` 명령어 실행
 
 # 실행 결과
-![실행 결과 이미지](TestWork/실행결과.png)
+![실행 결과 이미지](실행결과.png)
 
 # 특이사항 
 - 새 윈도우를 여는 등 기존 과제와 달라진 점을 고려하여 전체 async - await 비동기 방식 선택 
