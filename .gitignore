@@ -174,3 +174,16 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python
+test.py
+baekjoon/1253.py
+baekjoon/11003.py
+baekjoon/11659.py
+baekjoon/분수의덧셈.py
+baekjoon/중앙값구하기.py
+baekjoon/최빈값구하기.py
+upbitbot/backtest_result.xlsx
+upbitbot/backtest.py
+upbitbot/backtestWithAI.py
+upbitbot/bot.py
+upbitbot/getk.py
+upbitbot/key.txt
