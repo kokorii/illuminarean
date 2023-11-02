@@ -439,10 +439,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 03-Aug-2023 at 00:36:20 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 03-Nov-2023 at 03:41:00 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Summary</h2>
-    <p>10 tests ran in 30.14 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">8 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">2 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>1 tests ran in 8.07 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -453,143 +453,17 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">test_my_application.py::test_contact_page_input_form[test_case8]</td>
-          <td class="col-duration">2.77</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">test_case = {&#x27;email&#x27;: &#x27;test@test.co.kr&#x27;, &#x27;expect&#x27;: False, &#x27;idea&#x27;: &#x27;19293582835&#x27;, &#x27;name&#x27;: &#x27;1002383849293&#x27;}<br/><br/>    @pytest.mark.parametrize(&quot;test_case&quot;, test_cases)<br/>    def test_contact_page_input_form(test_case):<br/>    <br/>        url = &quot;https://www.illuminarean.com/&quot;<br/>    <br/>        # given<br/>        name: str = test_case[&quot;name&quot;]<br/>        email: str = test_case[&quot;email&quot;]<br/>        idea: str = test_case[&quot;idea&quot;]<br/>    <br/>        # when<br/>        with sync_playwright() as p:<br/>            testcase: Testcase = Testcase(url, name, email, idea, p)<br/>            try:<br/>                print(&quot;testcase 생성&quot;)<br/>                testcase.open_browser()<br/>    <br/>                print(&quot;browser open&quot;)<br/>                testcase.go_to_page()<br/>    <br/>                print(&quot;go to contact page&quot;)<br/>                testcase.fill_with_given_conditions()<br/>    <br/>                print(&quot;fill with given conditions&quot;)<br/>    <br/>                button_status = testcase.check_button_status()<br/>                print(&quot;check button status&quot;)<br/>    <br/>        #then<br/>                #test result<br/>                #print(f&quot;Testcase {idx+1}: {button_status}&quot;)<br/>&gt;               assert button_status == test_case[&quot;expect&quot;]<br/><span class="error">E               assert True == False</span><br/><br/>test_my_application.py:178: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>testcase 생성
-browser open
-go to contact page
-fill with given conditions
-check button status
-<br/></div></td></tr></tbody>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">test_my_application.py::test_contact_page_input_form[test_case9]</td>
-          <td class="col-duration">3.13</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">test_case = {&#x27;email&#x27;: &#x27;test@test.net&#x27;, &#x27;expect&#x27;: False, &#x27;idea&#x27;: &#x27;올바른 아이디어 제시하기!&#x27;, &#x27;name&#x27;: &#x27;@#$@#$!#%!$%//&#x27;}<br/><br/>    @pytest.mark.parametrize(&quot;test_case&quot;, test_cases)<br/>    def test_contact_page_input_form(test_case):<br/>    <br/>        url = &quot;https://www.illuminarean.com/&quot;<br/>    <br/>        # given<br/>        name: str = test_case[&quot;name&quot;]<br/>        email: str = test_case[&quot;email&quot;]<br/>        idea: str = test_case[&quot;idea&quot;]<br/>    <br/>        # when<br/>        with sync_playwright() as p:<br/>            testcase: Testcase = Testcase(url, name, email, idea, p)<br/>            try:<br/>                print(&quot;testcase 생성&quot;)<br/>                testcase.open_browser()<br/>    <br/>                print(&quot;browser open&quot;)<br/>                testcase.go_to_page()<br/>    <br/>                print(&quot;go to contact page&quot;)<br/>                testcase.fill_with_given_conditions()<br/>    <br/>                print(&quot;fill with given conditions&quot;)<br/>    <br/>                button_status = testcase.check_button_status()<br/>                print(&quot;check button status&quot;)<br/>    <br/>        #then<br/>                #test result<br/>                #print(f&quot;Testcase {idx+1}: {button_status}&quot;)<br/>&gt;               assert button_status == test_case[&quot;expect&quot;]<br/><span class="error">E               assert True == False</span><br/><br/>test_my_application.py:178: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>testcase 생성
-browser open
-go to contact page
-fill with given conditions
-check button status
-<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_my_application.py::test_contact_page_input_form[test_case0]</td>
-          <td class="col-duration">3.95</td>
+          <td class="col-name">test_work_page.py::test_goodvibe_freeform[test_case0]</td>
+          <td class="col-duration">8.04</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>testcase 생성
-browser open
-go to contact page
+go to goodvibe works website
+이것저것 테스트했다
 fill with given conditions
-check button status
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_my_application.py::test_contact_page_input_form[test_case1]</td>
-          <td class="col-duration">2.82</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>testcase 생성
-browser open
-go to contact page
-fill with given conditions
-check button status
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_my_application.py::test_contact_page_input_form[test_case2]</td>
-          <td class="col-duration">3.12</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>testcase 생성
-browser open
-go to contact page
-fill with given conditions
-check button status
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_my_application.py::test_contact_page_input_form[test_case3]</td>
-          <td class="col-duration">2.93</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>testcase 생성
-browser open
-go to contact page
-fill with given conditions
-check button status
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_my_application.py::test_contact_page_input_form[test_case4]</td>
-          <td class="col-duration">2.95</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>testcase 생성
-browser open
-go to contact page
-fill with given conditions
-check button status
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_my_application.py::test_contact_page_input_form[test_case5]</td>
-          <td class="col-duration">2.67</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>testcase 생성
-browser open
-go to contact page
-fill with given conditions
-check button status
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_my_application.py::test_contact_page_input_form[test_case6]</td>
-          <td class="col-duration">3.13</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>testcase 생성
-browser open
-go to contact page
-fill with given conditions
-check button status
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_my_application.py::test_contact_page_input_form[test_case7]</td>
-          <td class="col-duration">2.60</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>testcase 생성
-browser open
-go to contact page
-fill with given conditions
-check button status
+check submit button status
 <br/></div></td></tr></tbody></table></body></html>
